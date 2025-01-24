@@ -1,27 +1,27 @@
 "use client";
 import { useAppSelector } from "@/lib/hooks";
 import error from "./assets/error.json";
-import { Footer } from "flowbite-react";
 import Lottie from "lottie-react";
 
 import { useEffect } from "react";
 import Nav from "./components/shared_components/layout/Nav";
 import { SparklesCore } from "./Screens/WebsiteIntroSection/Components/Sparkles";
+import Footer from "./components/shared_components/layout/footer";
 function ErrorScreen() {
-  const mode = useAppSelector((state) => state.appSlice.mode);
+  // const mode = useAppSelector((state) => state.appSlice.mode);
 
-  let color;
-  if (mode === "dark") {
-    color = "#ffffff";
-  } else {
-    color = "#000000";
-  }
-  useEffect(() => {}, [color]);
+  // let color;
+  // if (mode === "dark") {
+  //   color = "#ffffff";
+  // } else {
+  //   color = "#000000";
+  // }
+  // useEffect(() => {}, [color]);
 
   return (
     <div className="flex flex-col items-center justify-center overflow-hidden">
       {" "}
-      <SparklesCore
+      {/* <SparklesCore
         id="tsparticlesfullpage"
         background="transparent"
         minSize={0.6}
@@ -29,7 +29,7 @@ function ErrorScreen() {
         particleDensity={50}
         className="h-screen w-screen"
         particleColor={color}
-      ></SparklesCore>{" "}
+      ></SparklesCore>{" "} */}
       <Nav className="absolute left-0 top-0" />
       <div className="absolute bottom-40">
         {" "}
