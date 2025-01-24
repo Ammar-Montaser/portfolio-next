@@ -4,7 +4,6 @@ import { Provider } from "react-redux";
 import { makeStore, AppStore } from "../lib/store";
 import { I18nextProvider } from "react-i18next";
 import i18n from "@/lib/i18n";
-import useTheme from "@/lib/theme_setter";
 import { ThemeProvider } from "next-themes";
 
 export default function StoreProvider({
@@ -16,7 +15,7 @@ export default function StoreProvider({
   // localStorage.setItem("theme", "dark");
   // document.documentElement.className = "dark";
   if (!storeRef.current) {
-    useTheme();
+    // useTheme();
     // Create the store instance the first time this renders
     storeRef.current = makeStore();
   }
