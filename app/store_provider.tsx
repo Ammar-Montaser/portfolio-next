@@ -13,7 +13,7 @@ export default function StoreProvider({
   children: React.ReactNode;
 }) {
   const storeRef = useRef<AppStore>(undefined);
-  localStorage.setItem("theme", "dark");
+  // localStorage.setItem("theme", "dark");
   document.documentElement.className = "dark";
   if (!storeRef.current) {
     useTheme();
