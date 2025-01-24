@@ -1,12 +1,13 @@
 import Lottie from "lottie-react";
-import error from "../../../assets/error.json";
-import Footer from "../../Layout/Footer/Footer";
-import Nav from "../../Layout/NavBar/Nav";
+import error from "../../assets/error.json";
+
 import { SparklesCore } from "../WebsiteIntroSection/Components/Sparkles";
-import { useAppSelector } from "../../../Hooks/ReduxHooks";
 import { useEffect } from "react";
+import { useAppSelector } from "@/lib/hooks";
+import Nav from "@/app/components/shared_components/layout/Nav";
+import Footer from "@/app/components/shared_components/layout/footer";
 function ErrorScreen() {
-  const mode = useAppSelector((state) => state.app.mode);
+  const mode = useAppSelector((state) => state.appSlice.mode);
 
   let color;
   if (mode === "dark") {
