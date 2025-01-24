@@ -14,7 +14,7 @@ export default function StoreProvider({
 }) {
   const storeRef = useRef<AppStore>(undefined);
   // localStorage.setItem("theme", "dark");
-  document.documentElement.className = "dark";
+  // document.documentElement.className = "dark";
   if (!storeRef.current) {
     useTheme();
     // Create the store instance the first time this renders
