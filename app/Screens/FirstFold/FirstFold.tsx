@@ -17,7 +17,7 @@ function FirstFold() {
         <div className="relative flex items-center justify-center">
           {/* photo of me */}
           <motion.img
-            className="absolute z-10 h-auto max-w-min max-sm:mt-5 max-sm:h-screen sm:w-5/6 md:w-5/6"
+            className="absolute z-10 h-auto max-w-min max-sm:mt-10 max-sm:h-screen sm:w-5/6 md:w-5/6"
             src="https://iili.io/JNxOJ9V.webp"
             alt="Profile photo"
             initial={{ top: 700, scale: 0.8 }}
@@ -29,7 +29,7 @@ function FirstFold() {
         {/* parallax headers behind my photo */}
         <div className="bg-black-400/65 absolute flex h-[100vh] w-full flex-col items-center justify-center overflow-hidden">
           <motion.h1
-            className="z-[3] text-nowrap text-center font-handjet text-6xl font-extrabold leading-normal tracking-widest text-black shadow-black drop-shadow-2xl dark:text-white max-sm:z-10 max-sm:mt-32 max-sm:text-white sm:text-[6rem] md:text-[8rem] lg:text-[8rem] xl:text-[10rem]"
+            className="z-[3] text-nowrap text-center font-handjet text-6xl font-extrabold leading-normal tracking-widest text-black shadow-black drop-shadow-2xl dark:text-white max-sm:z-10 max-sm:mt-36 max-sm:text-white sm:text-[6rem] md:text-[8rem] lg:text-[8rem] xl:text-[10rem]"
             initial={{ translateX: -1700 }}
             animate={{
               translateX: 0,
@@ -41,7 +41,7 @@ function FirstFold() {
           </motion.h1>
           <motion.h2
             style={{ y }}
-            className="name z-10 text-center font-handjet text-[3rem] font-extrabold tracking-widest text-color shadow-black drop-shadow-2xl sm:text-[6rem] md:text-[8rem] lg:text-[8rem] xl:text-[10rem]"
+            className="name z-10 mb-20 text-center font-handjet text-[4rem] font-extrabold tracking-widest text-color shadow-black drop-shadow-2xl sm:text-[6rem] md:text-[8rem] lg:text-[8rem] xl:text-[10rem]"
             initial={{ translateX: 1500, opacity: 0, translateY: 100 }}
             animate={{ translateX: 0, opacity: 1, translateY: 100 }}
             transition={{ duration: 1 }}

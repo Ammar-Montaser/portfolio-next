@@ -26,7 +26,6 @@ function About() {
           </p>
 
           <div className="flex flex-row justify-between">
-            <SocialMediaIcons className="" size="size-6" />
             <a
               href="https://drive.google.com/uc?export=download&id=11FDWtO8qGjH4CN8dwPPd76XKpz_5Mn7p"
               className="roboto-bold w-50 rounded-2xl bg-BG px-4 py-2 text-black dark:bg-black dark:text-white"

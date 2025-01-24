@@ -46,9 +46,9 @@ function Startup() {
       <div className="sticky top-0 flex h-screen items-start justify-center overflow-hidden bg-neutral-100 dark:bg-[#121212]">
         <div className="absolute z-10 flex h-full w-full items-center justify-evenly max-sm:flex-col">
           <div className="left-0 right-0 -z-50 flex flex-col items-center justify-between gap-4">
-            <div className="ml-5 flex w-[400px] flex-col items-center">
+            <div className="flex w-[400px] flex-col items-center sm:ml-5">
               {" "}
-              <h2 className="nunito text-center text-7xl font-medium dark:text-white max-sm:text-4xl">
+              <h2 className="nunito text-center text-7xl font-medium text-black dark:text-white max-sm:text-4xl">
                 {" "}
                 Meet
               </h2>
@@ -67,17 +67,17 @@ function Startup() {
                   height={500}
                 />
               )}
-              <h2 className="nunito text-center text-3xl font-light dark:text-white max-sm:text-2xl">
+              <h2 className="nunito text-center text-3xl font-light text-black dark:text-white max-sm:text-2xl">
                 {" "}
                 The Ultimate AI Powered Social Platform{" "}
               </h2>
-              <h2 className="nunito text-center text-2xl font-medium dark:text-white max-sm:text-xl">
+              <h2 className="nunito text-center text-2xl font-medium text-black dark:text-white max-sm:text-xl">
                 {" "}
                 COMING SOON
               </h2>
               <a className="" href="https://www.bumpsocial.me" target="_blank">
                 <button className="mt-8 bg-[#fcff30] px-4 py-2">
-                  <h2 className="nunito text-center text-2xl font-medium dark:text-[#000000] max-sm:text-xl">
+                  <h2 className="nunito text-center text-2xl font-medium text-black dark:text-[#000000] max-sm:text-xl">
                     VISIT LANDING PAGE
                   </h2>
                 </button>
@@ -91,14 +91,11 @@ function Startup() {
           <div className="relative flex h-screen w-screen flex-1 flex-col items-center justify-end">
             {" "}
             {/* Third Section */}{" "}
-            <div className="h-screen w-full overflow-x-clip bg-BG max-xl:flex-col max-md:h-full">
+            <div className="h-screen w-full overflow-x-clip bg-[#fdee14a4] max-xl:flex-col max-md:h-full">
               <div className="mt-8 flex h-full w-full flex-row items-center justify-center max-sm:flex-col">
                 <div className="flex h-5/6 w-3/12 flex-col gap-8 max-xl:w-10/12">
-                  <motion.div
+                  <div
                     className="border-text hover:shadow-text/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fdf91b]"
-                    initial={{ x: -300, y: 0 }}
-                    whileInView={{ x: 0, y: 0 }}
-                    transition={{ duration: 0.5 }}
                     onMouseEnter={() => handleCardHover(1)}
                     onClick={() => handleCardHover(1)}
                     onMouseLeave={() => handleCardHover(0)}
@@ -118,12 +115,9 @@ function Startup() {
                       new friends to meetup in the real life based on multiple
                       things including interests, age, and location.
                     </p>
-                  </motion.div>
-                  <motion.div
+                  </div>
+                  <div
                     className="border-text hover:shadow-text/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fdf91b]"
-                    initial={{ y: 0, x: -300 }}
-                    whileInView={{ y: 0, x: 0 }}
-                    transition={{ duration: 0.5 }}
                     onMouseEnter={() => handleCardHover(2)}
                     onClick={() => handleCardHover(2)}
                     onMouseLeave={() => handleCardHover(0)}
@@ -143,14 +137,9 @@ function Startup() {
                       locations on the map, and plan real life hangouts with
                       them.
                     </p>
-                  </motion.div>
+                  </div>
                 </div>
-                <motion.div
-                  className="flex h-screen w-4/12 items-center justify-center"
-                  initial={{ y: 300 }}
-                  whileInView={{ y: 0 }}
-                  transition={{ duration: 1 }}
-                >
+                <div className="flex h-screen w-4/12 items-center justify-center">
                   <ThreeDCardDemo className="z-30">
                     {activeCard != 0 && (
                       <video
@@ -176,13 +165,10 @@ function Startup() {
                       </div>
                     )}
                   </ThreeDCardDemo>
-                </motion.div>
+                </div>
                 <div className="flex h-5/6 w-3/12 flex-col gap-8 max-xl:w-10/12">
-                  <motion.div
+                  <div
                     className="border-text hover:shadow-text/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fdf91b]"
-                    initial={{ x: 300, y: 0 }}
-                    whileInView={{ x: 0, y: 0 }}
-                    transition={{ duration: 0.5 }}
                     onMouseEnter={() => handleCardHover(3)}
                     onClick={() => handleCardHover(3)}
                     onMouseLeave={() => handleCardHover(0)}
@@ -204,12 +190,9 @@ function Startup() {
                       cozy corner to chill or a vibrant venue for fun, or just
                       start a vote and your circle can help you decide.
                     </p>
-                  </motion.div>
-                  <motion.div
+                  </div>
+                  <div
                     className="border-text hover:shadow-text/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fdf91b]"
-                    initial={{ y: 0, x: 300 }}
-                    whileInView={{ y: 0, x: 0 }}
-                    transition={{ duration: 0.5 }}
                     onMouseEnter={() => handleCardHover(4)}
                     onClick={() => handleCardHover(4)}
                     onMouseLeave={() => handleCardHover(0)}
@@ -232,7 +215,7 @@ function Startup() {
                       worth sharing! Let me know if you&apos;d like to tweak the
                       tone further!
                     </p>
-                  </motion.div>
+                  </div>
                 </div>
               </div>
             </div>{" "}
