@@ -1,0 +1,34 @@
+.orb {
+  width: 2em;
+  height: 2em;
+  background-color: #ebff0c;
+  border-radius: 50%;
+  box-shadow: inset -0.2em -0.2em 0.8em rgba(221, 255, 0, 0.996),
+    0 0 0.2em #c7dd3c, 0 0 0.4em #fffb02, 0 0 0.6em rgba(123, 125, 18, 0.898),
+    0 0 0.8em rgba(0, 0, 0, 0.1), 0 0 1.6em rgba(255, 180, 50, 0.5);
+  cursor: pointer;
+  animation-duration: 100;
+  animation: 5s ease infinite;
+}
+
+.dark .orb {
+  background-color: transparent;
+  box-shadow: none;
+  animation-duration: 100;
+
+  animation: 5s ease infinite;
+}
+
+.dark .orb::after {
+  content: "";
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: 5s ease infinite;
+  animation-duration: 100;
+
+  box-shadow: inset -0.5em -0.2em 0.1em white;
+}

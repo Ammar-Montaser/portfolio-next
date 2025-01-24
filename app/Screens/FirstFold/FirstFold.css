@@ -1,0 +1,74 @@
+.right_side {
+  z-index: 0;
+  opacity: 0.8;
+  background-image: linear-gradient(var(--BG) 2.7px, transparent 2.7px),
+    linear-gradient(to right, var(--color) 2.7px, #e5e5f700 2.7px);
+  background-size: 54px 54px;
+  /* background-color: #e5e5f700;
+  opacity: 1;
+  background-image: linear-gradient(135deg, var(--BG) 25%, transparent 25%),
+    linear-gradient(225deg, var(--BG) 25%, transparent 25%),
+    linear-gradient(45deg, var(--BG) 25%, transparent 25%),
+    linear-gradient(315deg, var(--BG) 25%, #e5e5f700 25%);
+  background-position:
+    35px 0,
+    35px 0,
+    0 0,
+    0 0;
+  background-size: 70px 70px;
+  background-repeat: repeat; */
+}
+
+.grain:after {
+  content: "";
+  z-index: 0;
+  overflow: hidden;
+  background-image: url("https://iili.io/JkcKb6X.webp");
+  height: 200%;
+  width: 200%;
+  position: absolute;
+  opacity: 0.1;
+  animation: animateGrain 8s steps(10) infinite;
+}
+
+.name {
+  text-shadow: #00000097 0px 10px 30px;
+}
+
+@keyframes animateGrain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, -20%);
+  }
+  30% {
+    transform: translate(-5%, -10%);
+  }
+  40% {
+    transform: translate(-15%, -20%);
+  }
+
+  50% {
+    transform: translate(-5%, -10%);
+  }
+  60% {
+    transform: translate(-15%, -20%);
+  }
+  70% {
+    transform: translate(-5%, -10%);
+  }
+  80% {
+    transform: translate(-15%, -20%);
+  }
+  90% {
+    transform: translate(-5%, -10%);
+  }
+  100% {
+    transform: translate(-15%, -20%);
+  }
+}

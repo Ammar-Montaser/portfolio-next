@@ -1,0 +1,37 @@
+/* HTML: <div class="triangle"></div> */
+.light .triangle {
+  --r: 20px; /* border radius */
+
+  aspect-ratio: 2;
+  -webkit-mask: linear-gradient(0deg, #0000 calc(var(--r) / sqrt(2)), #000 0),
+    radial-gradient(
+      var(--r) at 50% calc(100% - var(--r) * sqrt(2)),
+      #000 98%,
+      #0000 101%
+    );
+  clip-path: polygon(50% 100%, 100% 0, 0 0);
+  background: linear-gradient(
+    45deg,
+    rgba(243, 244, 246, 0.9),
+    rgba(243, 244, 246, 0.9)
+  );
+}
+
+/* HTML: <div class="triangle"></div> */
+.dark .triangle {
+  --r: 10px; /* border radius */
+
+  aspect-ratio: 2;
+  -webkit-mask: linear-gradient(0deg, #0000 calc(var(--r) / sqrt(2)), #000 0),
+    radial-gradient(
+      var(--r) at 50% calc(100% - var(--r) * sqrt(2)),
+      #000 98%,
+      #0000 101%
+    );
+  clip-path: polygon(50% 100%, 100% 0, 0 0);
+  background: linear-gradient(
+    45deg,
+    rgba(55, 65, 81, 0.9),
+    rgba(55, 65, 81, 0.9)
+  );
+}

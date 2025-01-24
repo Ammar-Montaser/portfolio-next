@@ -3,19 +3,63 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* overflow: hidden; */
+  --BG: rgba(31, 233, 4, 0.478);
+  /* background-color: var(--BG); */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  --sb-track-color: #000000cc;
+  --sb-thumb-color: var(--color);
+  --sb-size: 15px;
+  --color: #14a800;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color);
+  border-radius: 3px;
+  border: 5px solid #000000;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--color) var(--sb-track-color);
+  }
+}
+
+.dark {
+  background-color: #222222;
+  --primaryDark: rgb(46, 122, 32);
+  --primaryContent: rgb(226, 226, 226);
+  --primaryContentHoverDark: rgb(65, 202, 31);
+  --secondaryDark: rgb(23, 23, 23);
+  --secondaryContentDark: rgb(222, 222, 222);
+  --secondaryContentHoverDark: rgb(209, 209, 209);
+  --warningDark: #cc9c00;
+  --errorDark: #ba1a3e;
+}
+
+.light {
+  background-color: #f4f3f2;
+  --primary: rgb(15, 170, 46);
+  --primaryContent: rgb(27, 27, 27);
+  --primaryContentHover: rgb(0, 0, 0);
+  --secondary: rgb(250, 249, 246);
+  --secondaryContent: rgb(19, 204, 38);
+  --secondaryContentHover: rgb(0, 0, 0);
+  --success: #00d048;
+  --warning: #cc9c00;
+  --error: #ba1a3e;
 }
