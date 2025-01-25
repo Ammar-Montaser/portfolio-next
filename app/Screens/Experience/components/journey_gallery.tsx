@@ -156,7 +156,7 @@ interface CarouselProps {
 }
 
 export function Carousel({ slides }: CarouselProps) {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(7);
 
   const handlePreviousClick = () => {
     const previous = current - 1;
