@@ -1,4 +1,5 @@
 "use client";
+import SocialMediaIcons from "@/app/components/shared_components/social_media_icons";
 import React, { FormEvent } from "react";
 
 function Contact() {
@@ -51,7 +52,7 @@ function Contact() {
               name="email"
               type="email"
               id="email"
-              className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-black shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+              className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-black shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:shadow-sm-light"
               placeholder="name@email.com"
             />
           </div>
@@ -66,7 +67,7 @@ function Contact() {
               type="text"
               name="name"
               id="name"
-              className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+              className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:shadow-sm-light"
               placeholder="What's your name?"
             />
           </div>
@@ -102,6 +103,7 @@ function Contact() {
             "Aim for the moon. If you miss you'll land among the stars"
           </h2>
         </form>{" "}
+        <SocialMediaIcons size="size-10 mt-8" />
       </div>{" "}
     </div>
   );

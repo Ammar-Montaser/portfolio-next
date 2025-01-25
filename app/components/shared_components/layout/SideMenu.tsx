@@ -64,6 +64,12 @@ function SideMenu() {
             handleHoverExit={handleHoverExit}
           />
           <HamburgerMenuItem
+            href="#startup"
+            text={t("startup")}
+            handleHover={handleHover}
+            handleHoverExit={handleHoverExit}
+          />
+          <HamburgerMenuItem
             href="#projects"
             text={t("projects")}
             handleHover={handleHover}

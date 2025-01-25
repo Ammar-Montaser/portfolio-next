@@ -42,7 +42,7 @@ function Startup() {
   const { scrollYProgress } = useScroll({ target: targetRef });
   const x = useTransform(scrollYProgress, [0, 1], ["-70%", "70%"]);
   return (
-    <div ref={targetRef} className="relative sm:h-[500vh]">
+    <div id="startup" ref={targetRef} className="relative sm:h-[500vh]">
       <div className="sticky top-0 flex h-screen items-start justify-center overflow-hidden bg-neutral-100 dark:bg-[#121212]">
         <div className="absolute z-10 flex h-full w-full items-center justify-evenly max-sm:flex-col">
           <div className="left-0 right-0 -z-50 flex flex-col items-center justify-between gap-4">
@@ -91,7 +91,7 @@ function Startup() {
           <div className="relative flex h-screen w-screen flex-1 flex-col items-center justify-end">
             {" "}
             {/* Third Section */}{" "}
-            <div className="h-screen w-full overflow-x-clip bg-[#fdee14a4] max-xl:flex-col max-md:h-full">
+            <div className="h-screen w-full overflow-x-clip bg-[#000000bd] max-xl:flex-col max-md:h-full">
               <div className="mt-8 flex h-full w-full flex-row items-center justify-center max-sm:flex-col">
                 <div className="flex h-5/6 w-3/12 flex-col gap-8 max-xl:w-10/12">
                   <div
@@ -104,13 +104,13 @@ function Startup() {
                       <h2 className="raleway mb-4 text-4xl font-bold text-[#fdf91b]">
                         New Friends
                       </h2>{" "}
-                      <IoPersonAddSharp className="text-accent/20 mb-2 size-20" />
+                      <IoPersonAddSharp className="text-accent/20 mb-2 size-20 dark:text-white" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold">
+                    <span className="text-text mb-2 text-center text-xl font-bold dark:text-white">
                       {" "}
                       Down for extra adventure? Bored? Want to see new faces?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg">
+                    <p className="roboto text-text text-center text-lg dark:text-white">
                       Bump&apos;s artificial intelligence brain matches you with
                       new friends to meetup in the real life based on multiple
                       things including interests, age, and location.
@@ -126,20 +126,20 @@ function Startup() {
                       <h2 className="raleway mb-2 text-4xl font-bold text-[#fdf91b]">
                         Existing Friends
                       </h2>{" "}
-                      <IoPeople className="text-accent/20 mb-2 size-20" />
+                      <IoPeople className="text-accent/20 mb-2 size-20 dark:text-white" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold">
+                    <span className="text-text mb-2 text-center text-xl font-bold dark:text-white">
                       {" "}
                       Want to stick to the regular?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg">
+                    <p className="roboto text-text text-center text-lg dark:text-white">
                       Bump allows you to add your existing friends, see their
                       locations on the map, and plan real life hangouts with
                       them.
                     </p>
                   </div>
                 </div>
-                <div className="flex h-screen w-4/12 items-center justify-center">
+                <div className="flex h-screen w-4/12 flex-col items-center justify-center text-white">
                   <ThreeDCardDemo className="z-30">
                     {activeCard != 0 && (
                       <video
@@ -165,6 +165,7 @@ function Startup() {
                       </div>
                     )}
                   </ThreeDCardDemo>
+                  <h2 className="">HOVER OVER ONE OF CARDS</h2>
                 </div>
                 <div className="flex h-5/6 w-3/12 flex-col gap-8 max-xl:w-10/12">
                   <div
@@ -177,14 +178,14 @@ function Startup() {
                       <h2 className="raleway mb-4 text-4xl font-bold text-[#fdf91b]">
                         Discover Places
                       </h2>{" "}
-                      <MdPlace className="text-accent/20 mb-2 size-20" />
+                      <MdPlace className="text-accent/20 mb-2 size-20 dark:text-white" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold">
+                    <span className="text-text mb-2 text-center text-xl font-bold dark:text-white">
                       {" "}
                       Looking for a change of scenery or your next favorite
                       spot?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg">
+                    <p className="roboto text-text text-center text-lg dark:text-white">
                       Bump makes it easy to explore new cafés, parks,
                       restaurants, and more. Whether you&apos;re searching for a
                       cozy corner to chill or a vibrant venue for fun, or just
@@ -201,13 +202,13 @@ function Startup() {
                       <h2 className="raleway mb-4 text-4xl font-bold text-[#fdf91b]">
                         Discover Activities
                       </h2>{" "}
-                      <MdLocalActivity className="text-accent/20 mb-2 size-20" />
+                      <MdLocalActivity className="text-accent/20 mb-2 size-20 dark:text-white" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold">
+                    <span className="text-text mb-2 text-center text-xl font-bold dark:text-white">
                       {" "}
                       Ready to shake up your routine?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg">
+                    <p className="roboto text-text text-center text-lg dark:text-white">
                       Whether it’s a thrilling adventure, a relaxing yoga
                       session, or a spontaneous karaoke night, Bump helps you
                       uncover exciting activities tailored to your vibe. Join

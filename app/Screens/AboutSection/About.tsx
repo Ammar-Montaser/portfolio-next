@@ -48,29 +48,29 @@ function About() {
               src="https://i.postimg.cc/NMJFZpmd/IMG-7448.webp"
               alt="A random pic of me"
               className="h-full w-full object-cover"
-              width={500}
-              height={500}
+              width={900}
+              height={900}
             />
             <Image
               src="https://i.postimg.cc/zvQLH0fy/277598-F4-0-EBA-4-A92-9941-2410-EDB81969.webp"
               alt="A picture of me in my favorite coffee shop"
               className="h-full w-full object-cover"
-              width={500}
-              height={500}
+              width={900}
+              height={900}
             />
             <Image
               src="https://i.postimg.cc/qRMgm9ht/IMG-3779.webp"
               alt="A picture of me attending Startups Without Borders Summit"
               className="h-full w-full object-cover"
-              width={500}
-              height={500}
+              width={900}
+              height={900}
             />
             <Image
               src="https://iili.io/JOgkVOQ.webp"
               alt="My Amazon Swag"
               className="h-full w-full object-cover"
-              width={500}
-              height={500}
+              width={900}
+              height={900}
             />
           </Carousel>
         </div>

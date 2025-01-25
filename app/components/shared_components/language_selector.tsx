@@ -25,10 +25,10 @@ function LanguageSelector() {
   const dispatch = useAppDispatch();
 
   return (
-    <div className="ml-5 rtl:mr-5 dark:text-primaryContentDark  text-primaryContent ">
+    <div className="dark:text-primaryContentDark ml-5 text-primaryContent rtl:mr-5">
       <select
         defaultValue={language!}
-        className="px-2 py-1 bg-BG rounded-md"
+        className="rounded-md bg-BG px-2 py-1"
         onChange={(e) => {
           i18n.changeLanguage(e.currentTarget.value);
           localStorage.setItem("language", i18n.language);

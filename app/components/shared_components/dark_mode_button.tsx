@@ -8,18 +8,20 @@ function Toggle(props: { className?: string }) {
   const dispatch = useAppDispatch();
 
   const handleOnClick = () => {
-    if (localStorage.getItem("theme") === "dark") {
-      dispatch(appSliceActions.changeMode("light"));
-      localStorage.setItem("theme", "light");
-      document.documentElement.className = "light";
-    } else if (localStorage.getItem("theme") === "light") {
-      dispatch(appSliceActions.changeMode("dark"));
-      localStorage.setItem("theme", "dark");
-      document.documentElement.className = "dark";
-    } else {
-      dispatch(appSliceActions.changeMode("dark"));
-      localStorage.setItem("theme", "dark");
-      document.documentElement.className = "dark";
+    if (typeof document !== "undefined") {
+      if (localStorage.getItem("theme") === "dark") {
+        dispatch(appSliceActions.changeMode("light"));
+        localStorage.setItem("theme", "light");
+        document.documentElement.className = "light";
+      } else if (localStorage.getItem("theme") === "light") {
+        dispatch(appSliceActions.changeMode("dark"));
+        localStorage.setItem("theme", "dark");
+        document.documentElement.className = "dark";
+      } else {
+        dispatch(appSliceActions.changeMode("dark"));
+        localStorage.setItem("theme", "dark");
+        document.documentElement.className = "dark";
+      }
     }
   };
 

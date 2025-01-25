@@ -106,10 +106,8 @@ export const ProductCard = ({
           alt={product.title}
         />
       </a>
-      <div className="pointer-events-none absolute inset-0 h-full w-full rounded-3xl bg-black opacity-0 group-hover/product:opacity-80"></div>
-      <h2 className="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">
-        {product.title}
-      </h2>
+      <div className="pointer-events-none absolute inset-0 h-full w-full rounded-3xl bg-gradient-to-t from-[#000000cb] to-transparent"></div>
+      <h2 className="absolute bottom-4 left-4 text-white">{product.title}</h2>
     </motion.div>
   );
 };

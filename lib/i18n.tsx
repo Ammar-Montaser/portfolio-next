@@ -11,6 +11,8 @@ i18n.use(initReactI18next).init({
         experience: "EXPERIENCE",
         projects: "PROJECTS",
         contact: "CONTACT",
+        startup: "STARTUP",
+
         downloadResume: "Download Resume",
         freePalestine: "Free Palestine 🇵🇸",
         palestineMessage:
@@ -22,6 +24,7 @@ i18n.use(initReactI18next).init({
         websiteName: "عمار منتصر/",
         about: "مين انا",
         experience: "خبرتي",
+        startup: "شركتي",
         projects: "مشاريعي",
         contact: "تواصل معايا",
         downloadResume: "  نزل ال CV",

@@ -15,18 +15,25 @@ export const InfiniteMovingCards = ({
 }) => {
   const logos = [
     {
+      id: 5,
+      lightUrl:
+        "https://images.wuzzuf-data.net/files/company_logo/184062856462c1688817c1b.png",
+      darkUrl:
+        "https://images.wuzzuf-data.net/files/company_logo/184062856462c1688817c1b.png",
+    },
+    {
       id: 2,
       lightUrl: "https://www.cdnlogo.com/logos/v/98/vodafone-2017.svg",
       darkUrl: "https://www.cdnlogo.com/logos/v/98/vodafone-2017.svg",
     },
     {
-      id: 3,
+      id: 4,
       lightUrl: "https://www.cdnlogo.com/logos/s/72/souq-primary-en.svg",
       darkUrl: "https://www.cdnlogo.com/logos/s/72/souq-primary-en.svg",
     },
 
     {
-      id: 4,
+      id: 3,
       lightUrl:
         "https://securestream.tech/wp-content/uploads/2019/02/SSSheildv1.2_FULL_560x140.png",
       darkUrl:
@@ -36,13 +43,6 @@ export const InfiniteMovingCards = ({
       id: 1,
       lightUrl: "https://www.cdnlogo.com/logos/a/33/amazon-com.svg",
       darkUrl: "https://www.cdnlogo.com/logos/a/83/amazon-com.svg",
-    },
-    {
-      id: 5,
-      lightUrl:
-        "https://images.wuzzuf-data.net/files/company_logo/184062856462c1688817c1b.png",
-      darkUrl:
-        "https://jobs.teleperformance.es/wp-content/uploads/2022/04/logo-footer.png",
     },
   ];
   const containerRef = React.useRef<HTMLDivElement>(null);

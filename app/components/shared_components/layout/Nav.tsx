@@ -47,7 +47,7 @@ function Nav(props: { className?: string }): ReactNode {
           }
           onClick={toogleMenu}
         >
-          <FaBars className="fa-solid fa-bars dark:text-primaryContentDark rounded-md bg-BG px-3 py-2 text-4xl text-primaryContent shadow-md" />
+          <FaBars className="fa-solid fa-bars dark:text-primaryContentDark rounded-md bg-BG px-3 py-2 text-5xl text-primaryContent shadow-md" />
         </button>
       </motion.div>
       <SideMenu />

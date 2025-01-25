@@ -17,6 +17,12 @@ function Navbar() {
           className="hover:bg-white/70/80 rounded-md bg-BG px-4 py-2 hover:rounded-lg hover:text-primaryContentHover hover:shadow-lg hover:drop-shadow-lg dark:hover:bg-gray-600/70 dark:hover:text-white"
         >
           {t("experience")}
+        </a>{" "}
+        <a
+          href="#startup"
+          className="hover:bg-white/70/80 rounded-md bg-BG px-4 py-2 hover:rounded-lg hover:text-primaryContentHover hover:shadow-lg hover:drop-shadow-lg dark:hover:bg-gray-600/70 dark:hover:text-white"
+        >
+          {t("startup")}
         </a>
         <a
           href="#projects"
