@@ -5,7 +5,7 @@ import Nav from "./components/shared_components/layout/Nav";
 import StoreProvider from "./store_provider";
 import Footer from "./components/shared_components/layout/footer";
 import Head from "next/head";
-
+import { Analytics } from "@vercel/analytics/react";
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
@@ -61,6 +61,7 @@ export default function RootLayout({
       >
         <div>
           <StoreProvider>{children}</StoreProvider>
+          <Analytics />
         </div>
       </body>
     </html>

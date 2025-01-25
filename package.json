@@ -16,6 +16,7 @@
     "@tsparticles/engine": "^3.7.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.7.1",
+    "@vercel/analytics": "^1.4.1",
     "clsx": "^2.1.1",
     "countup.js": "^2.8.0",
     "devicon": "^2.16.0",

@@ -104,13 +104,13 @@ function Startup() {
                       <h2 className="raleway mb-4 text-4xl font-bold text-[#fdf91b]">
                         New Friends
                       </h2>{" "}
-                      <IoPersonAddSharp className="text-accent/20 mb-2 size-20 dark:text-white" />
+                      <IoPersonAddSharp className="text-accent/20 mb-2 size-20 text-white" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold dark:text-white">
+                    <span className="text-text mb-2 text-center text-xl font-bold text-white">
                       {" "}
                       Down for extra adventure? Bored? Want to see new faces?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg dark:text-white">
+                    <p className="roboto text-text text-center text-lg text-white">
                       Bump&apos;s artificial intelligence brain matches you with
                       new friends to meetup in the real life based on multiple
                       things including interests, age, and location.
@@ -126,13 +126,13 @@ function Startup() {
                       <h2 className="raleway mb-2 text-4xl font-bold text-[#fdf91b]">
                         Existing Friends
                       </h2>{" "}
-                      <IoPeople className="text-accent/20 mb-2 size-20 dark:text-white" />
+                      <IoPeople className="mb-2 size-20 text-white" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold dark:text-white">
+                    <span className="text-text mb-2 text-center text-xl font-bold text-white">
                       {" "}
                       Want to stick to the regular?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg dark:text-white">
+                    <p className="roboto text-text text-center text-lg text-white">
                       Bump allows you to add your existing friends, see their
                       locations on the map, and plan real life hangouts with
                       them.
@@ -178,14 +178,14 @@ function Startup() {
                       <h2 className="raleway mb-4 text-4xl font-bold text-[#fdf91b]">
                         Discover Places
                       </h2>{" "}
-                      <MdPlace className="text-accent/20 mb-2 size-20 dark:text-white" />
+                      <MdPlace className="text-accent/20 mb-2 size-20 text-white" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold dark:text-white">
+                    <span className="text-text mb-2 text-center text-xl font-bold text-white">
                       {" "}
                       Looking for a change of scenery or your next favorite
                       spot?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg dark:text-white">
+                    <p className="roboto text-text text-center text-lg text-white">
                       Bump makes it easy to explore new cafés, parks,
                       restaurants, and more. Whether you&apos;re searching for a
                       cozy corner to chill or a vibrant venue for fun, or just
