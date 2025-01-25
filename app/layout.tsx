@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="language" content="en-us" />

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Global styles (styles/globals.css) */
 
 :root {
   /* overflow: hidden; */
