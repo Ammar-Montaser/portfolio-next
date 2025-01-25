@@ -202,13 +202,13 @@ function Startup() {
                       <h2 className="raleway mb-4 text-4xl font-bold text-[#fdf91b]">
                         Discover Activities
                       </h2>{" "}
-                      <MdLocalActivity className="text-accent/20 mb-2 size-20 dark:text-white" />
+                      <MdLocalActivity className="text-accent/20 mb-2 size-20 text-white" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold dark:text-white">
+                    <span className="text-text mb-2 text-center text-xl font-bold text-white">
                       {" "}
                       Ready to shake up your routine?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg dark:text-white">
+                    <p className="roboto text-text text-center text-lg text-white">
                       Whether it’s a thrilling adventure, a relaxing yoga
                       session, or a spontaneous karaoke night, Bump helps you
                       uncover exciting activities tailored to your vibe. Join
