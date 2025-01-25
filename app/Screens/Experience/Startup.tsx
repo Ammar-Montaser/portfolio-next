@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { motion, useTransform, useScroll } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { motion, useTransform, useScroll, useInView } from "framer-motion";
 import bumpLogo from "../../assets/Bump Logo.png";
 import bumpLogoWhite from "../../assets/bumplogowhite.png";
 import join from "../../assets/join.png";
@@ -12,6 +12,7 @@ import Image from "next/image";
 import MovingIphones from "./components/iphone_screenshots";
 import { useAppSelector } from "@/lib/hooks";
 import ThreeDCardDemo from "@/app/components/3dCard/3dCardFirstFold";
+import { Carousel } from "./components/journey_gallery";
 
 function Startup() {
   const [activeCard, setActiveCard] = useState(0);
@@ -39,11 +40,16 @@ function Startup() {
   };
   const mode = useAppSelector((state) => state.appSlice.mode);
   const targetRef = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({ target: targetRef });
+  const { scrollY, scrollYProgress } = useScroll({ target: targetRef });
   const x = useTransform(scrollYProgress, [0, 1], ["-70%", "70%"]);
+
   return (
-    <div id="startup" ref={targetRef} className="relative sm:h-[500vh]">
-      <div className="sticky top-0 flex h-screen items-start justify-center overflow-hidden bg-neutral-100 dark:bg-[#121212]">
+    <div
+      id="startup"
+      ref={targetRef}
+      className="relative snap-x snap-mandatory sm:h-[500vh]"
+    >
+      <div className="sticky top-0 flex h-screen snap-x snap-mandatory items-start justify-center overflow-hidden bg-neutral-100 dark:bg-[#121212]">
         <div className="absolute z-10 flex h-full w-full items-center justify-evenly max-sm:flex-col">
           <div className="left-0 right-0 -z-50 flex flex-col items-center justify-between gap-4">
             <div className="flex w-[400px] flex-col items-center sm:ml-5">
@@ -86,7 +92,10 @@ function Startup() {
           </div>
           <MovingIphones />
         </div>
-        <motion.div className="z-20 flex max-sm:hidden" style={{ x: x }}>
+        <motion.div
+          className="z-20 flex snap-x snap-mandatory max-sm:hidden"
+          style={{ x: x }}
+        >
           {" "}
           <div className="relative flex h-screen w-screen flex-1 flex-col items-center justify-end">
             {" "}
@@ -234,18 +243,17 @@ function Startup() {
               className="left-0 top-0 h-screen w-screen object-cover"
             />
           </div>{" "}
-          <div className="relative flex h-screen w-screen flex-1 flex-col items-center justify-end">
+          <div className="relative flex h-screen w-screen flex-1 flex-col items-center justify-center overflow-hidden bg-[#000000e0]">
             {" "}
-            <video
-              playsInline
-              autoPlay
-              muted
-              loop
-              src="https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FBumphistoryOptimized.mp4?alt=media&token=f8140bb6-3cb0-412f-8bd7-0f5254a67bff"
-              width={100}
-              height={100}
-              className="left-0 top-0 h-screen w-screen object-cover"
-            />
+            <motion.h2
+              initial={{ y: -200 }}
+              whileInView={{ y: 0 }}
+              transition={{ duration: 1 }}
+              className="xl:text-[9 rem] z-10 text-[4rem] text-black dark:text-[#e8ff18] sm:text-[7rem] md:text-[7rem] lg:text-[8rem]"
+            >
+              THE JOURNEY
+            </motion.h2>
+            <Carousel slides={slides} />
           </div>
         </motion.div>
       </div>
@@ -253,4 +261,52 @@ function Startup() {
   );
 }
 
+const slides = [
+  {
+    title: "Bump Ecosystem Introduced",
+    year: "2025",
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FBUMPPARTNER.png?alt=media&token=7de3c736-bc95-4408-a3ac-13c95a3e0274",
+  },
+  {
+    title: "Meet Bump | The Ultimate AI Hangout Platform",
+    year: "2024",
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fphone%20on%20paper.png?alt=media&token=5e6f1874-3203-4304-b405-f6e32e3a7f7b",
+  },
+  {
+    title: "First Place Winner Software Engineering @ UAE",
+    year: "2022",
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fvlcsnap-2025-01-25-20h14m53s325.png?alt=media&token=92354d39-d68b-4247-b674-21ad52660c39",
+  },
+  {
+    title: "Meet The Hub | Bump V1",
+    year: "2022",
+
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fvlcsnap-2025-01-25-22h01m39s847.png?alt=media&token=6bdd1a01-b02d-4f91-8cc2-e2a1efb4c7c2",
+  },
+  {
+    title: "Academic Research Paper ",
+    year: "2021",
+
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FScreenshot%202024-12-18%20215440.png?alt=media&token=0b6b021f-b50c-44b9-8b9d-97a76391db5c",
+  },
+  {
+    title: "Extensive Market Research",
+    year: "2021",
+
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fmarketresearch.png?alt=media&token=a6b8fb88-5ee9-4c0e-ab56-04b144decb16",
+  },
+  {
+    title: "Idea Born: My Notebook",
+    year: "2020",
+
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fhjhj.png?alt=media&token=3c50b494-04da-40cf-bc32-44523f4e9d64",
+  },
+
+  {
+    title: "Pitching My First App in Grade 8",
+    year: "2016",
+
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fbabypitch.jpeg?alt=media&token=879f0edc-01ae-4306-81b0-a7c627953e3b",
+  },
+];
 export default Startup;
