@@ -1,7 +1,7 @@
 "use client";
 import { useAppSelector } from "@/lib/hooks";
 import error from "./assets/error.json";
-import Lottie from "lottie-react";
+import DynamicLottie from "@/lib/lottie";
 
 import { useEffect } from "react";
 import Nav from "./components/shared_components/layout/Nav";
@@ -41,7 +41,7 @@ function ErrorScreen() {
         </h1>
       </div>
       <div className="absolute top-40 w-6/12 overflow-hidden sm:w-4/12 md:w-4/12 lg:w-4/12 xl:w-2/12">
-        <Lottie
+        <DynamicLottie
           className=""
           loop={true}
           autoPlay={true}
