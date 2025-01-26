@@ -233,6 +233,7 @@ function Startup() {
           <div className="relative flex h-screen w-screen flex-1 flex-col items-center justify-end">
             {" "}
             <video
+              loop
               autoPlay
               playsInline
               muted
