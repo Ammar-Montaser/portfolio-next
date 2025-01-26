@@ -70,14 +70,14 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
       <li
         ref={slideRef}
-        className="relative z-10 mx-[4vmin] flex h-[50vmin] w-[90vmin] flex-1 flex-col items-center justify-center text-center text-white opacity-100 transition-all duration-300 ease-in-out"
+        className="relative z-10 mx-[4vmin] flex h-[49vmin] w-[90vmin] flex-1 flex-col items-center justify-center text-center text-white opacity-100 transition-all duration-300 ease-in-out"
         onClick={() => handleSlideClick(index)}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{
           transform:
             current !== index
-              ? "scale(0.95) rotateX(8deg)"
+              ? "scale(0.85) rotateX(10deg)"
               : "scale(1) rotateX(0deg)",
           transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
           transformOrigin: "bottom",
@@ -97,8 +97,8 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             style={{
               opacity: current === index ? 1 : 0.3,
             }}
-            width={700}
-            height={700}
+            width={1000}
+            height={1000}
             alt={title}
             src={src}
             onLoad={imageLoaded}
@@ -111,7 +111,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         </div>
       </li>{" "}
       <article
-        className={`relative flex items-center justify-center gap-8 py-8 text-center text-white transition-opacity duration-1000 ease-in-out ${
+        className={`relative flex flex-col items-center justify-center gap-8 py-8 text-center text-white transition-opacity duration-1000 ease-in-out ${
           current === index ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
@@ -178,11 +178,11 @@ export function Carousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative mx-auto h-[70vmin] w-[70vmin]"
+      className="relative mx-auto h-[70vmin] w-[100vmin]"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul
-        className="absolute mx-[-4vmin] flex transition-transform duration-1000 ease-in-out"
+        className="absolute flex transition-transform duration-1000 ease-in-out"
         style={{
           transform: `translateX(-${current * (100 / slides.length)}%)`,
         }}
@@ -198,7 +198,7 @@ export function Carousel({ slides }: CarouselProps) {
         ))}
       </ul>
 
-      <div className="absolute top-[calc(100%-3rem)] flex w-full justify-center">
+      <div className="absolute top-[calc(100%-1rem)] flex w-full justify-center">
         <CarouselControl
           type="previous"
           title="Go to previous slide"

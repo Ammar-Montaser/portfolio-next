@@ -233,10 +233,10 @@ function Startup() {
           <div className="relative flex h-screen w-screen flex-1 flex-col items-center justify-end">
             {" "}
             <video
-              playsInline
               autoPlay
+              playsInline
               muted
-              loop
+              controls
               src="https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FyearsIntheMakingOptimized.mp4?alt=media&token=d4e1f589-7071-4706-b486-b5574dcd40c4"
               width={100}
               height={100}
@@ -263,17 +263,22 @@ function Startup() {
 
 const slides = [
   {
-    title: "Bump Ecosystem Introduced",
+    title: "Bump Ecosystem | Bump Partners",
     year: "2025",
     src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FBUMPPARTNER.png?alt=media&token=7de3c736-bc95-4408-a3ac-13c95a3e0274",
   },
   {
-    title: "Meet Bump | The Ultimate AI Hangout Platform",
+    title: "Meet Bump | Rebuilt From Scratch",
     year: "2024",
     src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fphone%20on%20paper.png?alt=media&token=5e6f1874-3203-4304-b405-f6e32e3a7f7b",
   },
   {
-    title: "First Place Winner Software Engineering @ UAE",
+    title: "Launch Delayed | Military Service",
+    year: "2023",
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FWhatsApp%20Image%202025-01-26%20at%201.27.14%20AM.png?alt=media&token=0d25a64a-6682-4fba-97a2-1f8f5e131d72",
+  },
+  {
+    title: "First Place Winner | Software Engineering @ UAE",
     year: "2022",
     src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fvlcsnap-2025-01-25-20h14m53s325.png?alt=media&token=92354d39-d68b-4247-b674-21ad52660c39",
   },
@@ -284,26 +289,26 @@ const slides = [
     src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fvlcsnap-2025-01-25-22h01m39s847.png?alt=media&token=6bdd1a01-b02d-4f91-8cc2-e2a1efb4c7c2",
   },
   {
-    title: "Academic Research Paper ",
+    title: "Academic Research Paper | Grade 98% ",
     year: "2021",
 
     src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FScreenshot%202024-12-18%20215440.png?alt=media&token=0b6b021f-b50c-44b9-8b9d-97a76391db5c",
   },
   {
-    title: "Extensive Market Research",
+    title: "Extensive Market Research | Focus Study Groups",
     year: "2021",
 
     src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fmarketresearch.png?alt=media&token=a6b8fb88-5ee9-4c0e-ab56-04b144decb16",
   },
   {
-    title: "Idea Born: My Notebook",
+    title: "Idea Born | My Notebook",
     year: "2020",
 
     src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fhjhj.png?alt=media&token=3c50b494-04da-40cf-bc32-44523f4e9d64",
   },
 
   {
-    title: "Pitching My First App in Grade 8",
+    title: "Passion | Pitching My First App in Grade 8",
     year: "2016",
 
     src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fbabypitch.jpeg?alt=media&token=879f0edc-01ae-4306-81b0-a7c627953e3b",
