@@ -53,7 +53,7 @@ export default function RootLayout({
         />
         <meta
           name="keywords"
-          content="Software Engineer, BUMP, AI Hangout Platform, Startup, Mobile App, Bump, Web Developer, Mobile Developer, Computer Science, Programmer, Amazon, Egypt, Gaming, React, Javascript, Programming, Cairo, New Cairo, British University, FAANG, Flutter, Ammar, portfolio, Montaser, Ammar Montaser"
+          content="Software Engineer, BUMP, Hype, AI Hangout Platform, Startup, Mobile App, Bump, Web Developer, Mobile Developer, Computer Science, Programmer, Amazon, Egypt, Gaming, React, Javascript, Programming, Cairo, New Cairo, British University, FAANG, Flutter, Ammar, portfolio, Montaser, Ammar Montaser"
         />
       </Head>
       <body

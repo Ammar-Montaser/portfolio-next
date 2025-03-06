@@ -2,8 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useTransform, useScroll, useInView } from "framer-motion";
-import bumpLogo from "../../assets/Bump Logo.png";
-import bumpLogoWhite from "../../assets/bumplogowhite.png";
+import hypeLogo from "../../assets/newHypeLogoUpdatedBorder.png";
 import join from "../../assets/join.png";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { IoPersonAddSharp, IoPeople } from "react-icons/io5";
@@ -17,13 +16,13 @@ import { Carousel } from "./components/journey_gallery";
 function Startup() {
   const [activeCard, setActiveCard] = useState(0);
   const video1 =
-    "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FMatch.mp4?alt=media&token=1a2d5eb1-938a-49a3-b4a0-6cf99c8980df";
+    "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2FmatchScreen.mp4?alt=media&token=a61ec455-9718-49f8-85eb-5c48777b46c6";
   const video2 =
-    "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FPrivatewebm.mp4?alt=media&token=22acbf37-be05-4ad8-b534-635dd15f6512";
+    "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2Fcreate%20circle.mp4?alt=media&token=ec66cdcb-aefc-4823-bcb8-5777c5812858";
   const video3 =
-    "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FPlaces.mp4?alt=media&token=0e0ab1dc-9533-428a-aef0-aeb97f9886f2";
+    "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2Fplaces.mp4?alt=media&token=c5513d86-f2cf-4c79-8e06-9a322d5cff48";
   const video4 =
-    "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FSearchcirlce.mp4?alt=media&token=a9a16c71-6218-48c5-9e98-429b90bb0ae9";
+    "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2FcirclesScreen.mp4?alt=media&token=2c4d1126-f1ce-4ac2-85c7-7fe078404cc5";
   const handleCardHover = (index: number): void => {
     if (index === 0) {
       setActiveCard(0);
@@ -58,21 +57,7 @@ function Startup() {
                 {" "}
                 Meet
               </h2>
-              {mode == "light" ? (
-                <Image
-                  src={bumpLogo}
-                  alt="bump logo"
-                  width={500}
-                  height={500}
-                />
-              ) : (
-                <Image
-                  src={bumpLogoWhite}
-                  alt="bump logo"
-                  width={500}
-                  height={500}
-                />
-              )}
+              <Image src={hypeLogo} alt="hype logo" width={500} height={500} />
               <h2 className="nunito text-center text-3xl font-light text-black dark:text-white max-sm:text-2xl">
                 {" "}
                 The Ultimate AI Powered Social Platform{" "}
@@ -81,9 +66,9 @@ function Startup() {
                 {" "}
                 COMING SOON
               </h2>
-              <a className="" href="https://www.bumpsocial.me" target="_blank">
-                <button className="mt-8 bg-[#fcff30] px-4 py-2">
-                  <h2 className="nunito text-center text-2xl font-medium text-black dark:text-[#000000] max-sm:text-xl">
+              <a className="" href="https://www.hypeapp.me" target="_blank">
+                <button className="mt-8 bg-[#fcff30] px-4 py-2 hover:bg-[#b000ad]">
+                  <h2 className="nunito text-center text-2xl font-medium text-black hover:text-white dark:text-[#000000] max-sm:text-xl">
                     VISIT LANDING PAGE
                   </h2>
                 </button>
@@ -97,58 +82,62 @@ function Startup() {
           style={{ x: x }}
         >
           {" "}
-          <div className="relative flex h-screen w-screen flex-1 flex-col items-center justify-end">
+          <div className="relative flex h-screen w-screen flex-1 flex-col items-center justify-end bg-[#000000e0]">
             {" "}
-            {/* Third Section */}{" "}
-            <div className="h-screen w-full overflow-x-clip bg-[#000000bd] max-xl:flex-col max-md:h-full">
-              <div className="mt-8 flex h-full w-full flex-row items-center justify-center max-sm:flex-col">
-                <div className="flex h-5/6 w-3/12 flex-col gap-8 max-xl:w-10/12">
+            <div className="h-screen w-full overflow-x-clip max-xl:flex-col max-md:h-full">
+              <div className="flex h-full w-full flex-row items-center justify-center max-sm:flex-col">
+                <div className="flex h-5/6 w-3/12 flex-col gap-8 max-xl:w-11/12">
                   <div
-                    className="border-text hover:shadow-text/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fdf91b]"
+                    className="hover:shadow-yellow/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 border-black bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fff600] dark:border-[#b000ad] dark:hover:border-[#fff600]"
                     onMouseEnter={() => handleCardHover(1)}
                     onClick={() => handleCardHover(1)}
                     onMouseLeave={() => handleCardHover(0)}
                   >
-                    <div className="flex items-center justify-between gap-4">
-                      <h2 className="raleway mb-4 text-4xl font-bold text-[#fdf91b]">
+                    <div className="flex items-center justify-between gap-1">
+                      <h2 className="raleway mb-4 text-3xl font-bold text-[#fff600]">
                         New Friends
                       </h2>{" "}
-                      <IoPersonAddSharp className="text-accent/20 mb-2 size-20 text-white" />
+                      <IoPersonAddSharp className="mb-2 size-16 text-[#b000ad]/80" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold text-white">
+                    <span className="text-text mb-2 text-center text-lg font-bold text-white">
                       {" "}
                       Down for extra adventure? Bored? Want to see new faces?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg text-white">
-                      Bump&apos;s artificial intelligence brain matches you with
-                      new friends to meetup in the real life based on multiple
-                      things including interests, age, and location.
+                    <p className="text-md roboto text-text text-center text-white/70">
+                      Hype&apos;s AI connects you with new friends based on
+                      interests, age, and location—making real-life hangouts
+                      effortless.
                     </p>
                   </div>
                   <div
-                    className="border-text hover:shadow-text/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fdf91b]"
+                    className="hover:shadow-yellow/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 border-black bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fff600] dark:border-[#b000ad] dark:hover:border-[#fff600]"
                     onMouseEnter={() => handleCardHover(2)}
                     onClick={() => handleCardHover(2)}
                     onMouseLeave={() => handleCardHover(0)}
                   >
-                    <div className="flex items-center justify-between gap-4">
-                      <h2 className="raleway mb-2 text-4xl font-bold text-[#fdf91b]">
+                    <div className="flex items-center justify-between gap-1">
+                      <h2 className="raleway mb-2 text-3xl font-bold text-[#fff600]">
                         Existing Friends
                       </h2>{" "}
-                      <IoPeople className="mb-2 size-20 text-white" />
+                      <IoPeople className="mb-2 size-16 text-[#b000ad]/80" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold text-white">
+                    <span className="text-text mb-2 text-center text-lg font-bold text-white">
                       {" "}
                       Want to stick to the regular?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg text-white">
-                      Bump allows you to add your existing friends, see their
+                    <p className="text-md roboto text-text text-center text-white/70">
+                      Hype allows you to add your existing friends, see their
                       locations on the map, and plan real life hangouts with
                       them.
                     </p>
                   </div>
                 </div>
-                <div className="flex h-screen w-4/12 flex-col items-center justify-center text-white">
+                <motion.div
+                  className="flex h-screen w-4/12 items-center justify-center"
+                  initial={{ y: 300 }}
+                  whileInView={{ y: 0 }}
+                  transition={{ duration: 1 }}
+                >
                   <ThreeDCardDemo className="z-30">
                     {activeCard != 0 && (
                       <video
@@ -170,60 +159,61 @@ function Startup() {
                     )}
                     {activeCard == 0 && (
                       <div className="bg-background flex w-full items-center justify-center">
-                        <Image src={join} alt="" className="z-10" />
+                        <Image
+                          src="https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2FWelcome%20Screen%20TinyPNG.png?alt=media&token=ed932f61-5ca2-44d3-8e34-5e6d7fa9ee11"
+                          alt=""
+                          width={900}
+                          height={900}
+                          className="z-10"
+                        />
                       </div>
                     )}
                   </ThreeDCardDemo>
-                  <h2 className="">HOVER OVER ONE OF CARDS</h2>
-                </div>
+                </motion.div>
                 <div className="flex h-5/6 w-3/12 flex-col gap-8 max-xl:w-10/12">
                   <div
-                    className="border-text hover:shadow-text/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fdf91b]"
+                    className="hover:shadow-yellow/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 border-black bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fff600] dark:border-[#b000ad] dark:hover:border-[#fff600]"
                     onMouseEnter={() => handleCardHover(3)}
                     onClick={() => handleCardHover(3)}
                     onMouseLeave={() => handleCardHover(0)}
                   >
-                    <div className="flex items-center justify-between gap-4">
-                      <h2 className="raleway mb-4 text-4xl font-bold text-[#fdf91b]">
+                    <div className="flex items-center justify-between gap-1">
+                      <h2 className="raleway mb-4 text-3xl font-bold text-[#fff600]">
                         Discover Places
                       </h2>{" "}
-                      <MdPlace className="text-accent/20 mb-2 size-20 text-white" />
+                      <MdPlace className="mb-2 size-16 text-[#b000ad]/80" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold text-white">
+                    <span className="text-text mb-2 text-center text-lg font-bold text-white">
                       {" "}
                       Looking for a change of scenery or your next favorite
                       spot?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg text-white">
-                      Bump makes it easy to explore new cafés, parks,
-                      restaurants, and more. Whether you&apos;re searching for a
-                      cozy corner to chill or a vibrant venue for fun, or just
-                      start a vote and your circle can help you decide.
+                    <p className="text-md roboto text-text text-center text-white/70">
+                      Hype helps you explore cafés, parks, and restaurants
+                      effortlessly. Find the perfect spot or start a vote and
+                      let your circle decide!
                     </p>
                   </div>
                   <div
-                    className="border-text hover:shadow-text/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fdf91b]"
+                    className="hover:shadow-yellow/30 flex h-1/2 w-full flex-col items-center justify-center rounded-3xl border-4 border-black bg-black p-4 shadow-xl transition-all duration-500 hover:border-[#fff600] dark:border-[#b000ad] dark:hover:border-[#fff600]"
                     onMouseEnter={() => handleCardHover(4)}
                     onClick={() => handleCardHover(4)}
                     onMouseLeave={() => handleCardHover(0)}
                   >
-                    <div className="flex items-center justify-between gap-4">
-                      <h2 className="raleway mb-4 text-4xl font-bold text-[#fdf91b]">
+                    <div className="flex items-center justify-between gap-1">
+                      <h2 className="raleway mb-4 text-3xl font-bold text-[#fff600]">
                         Discover Activities
                       </h2>{" "}
-                      <MdLocalActivity className="text-accent/20 mb-2 size-20 text-white" />
+                      <MdLocalActivity className="mb-2 size-16 text-[#b000ad]/80" />
                     </div>
-                    <span className="text-text mb-2 text-center text-xl font-bold text-white">
+                    <span className="text-text mb-2 text-center text-lg font-bold text-white">
                       {" "}
                       Ready to shake up your routine?
                     </span>{" "}
-                    <p className="roboto text-text text-center text-lg text-white">
-                      Whether it’s a thrilling adventure, a relaxing yoga
-                      session, or a spontaneous karaoke night, Bump helps you
-                      uncover exciting activities tailored to your vibe. Join
-                      in, try something new, and make every moment an experience
-                      worth sharing! Let me know if you&apos;d like to tweak the
-                      tone further!
+                    <p className="text- roboto text-center text-white/70">
+                      From thrilling adventures to relaxing yoga or spontaneous
+                      karaoke, Hype connects you with activities that match your
+                      vibe.
                     </p>
                   </div>
                 </div>
@@ -250,7 +240,7 @@ function Startup() {
               initial={{ y: -200 }}
               whileInView={{ y: 0 }}
               transition={{ duration: 1 }}
-              className="xl:text-[9 rem] z-10 text-[4rem] text-black dark:text-[#e8ff18] sm:text-[7rem] md:text-[7rem] lg:text-[8rem]"
+              className="xl:text-[9 rem] z-10 text-[4rem] text-[#e8ff18] sm:text-[7rem] md:text-[7rem] lg:text-[8rem]"
             >
               THE JOURNEY
             </motion.h2>
@@ -263,6 +253,16 @@ function Startup() {
 }
 
 const slides = [
+  {
+    title: "Hype Rebranding",
+    year: "2025",
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2FhypeLogoBlack.png?alt=media&token=74e39600-eebe-4f89-ae79-c4b421ca7e51",
+  },
+  {
+    title: "Accelerated by AUC VLAB Cycle 24",
+    year: "2025",
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2FBumpXAUC.png?alt=media&token=80b87d3c-0828-478b-8859-e74e075b0d6f",
+  },
   {
     title: "Bump Ecosystem | Bump Partners",
     year: "2025",
@@ -284,7 +284,7 @@ const slides = [
     src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fvlcsnap-2025-01-25-20h14m53s325.png?alt=media&token=92354d39-d68b-4247-b674-21ad52660c39",
   },
   {
-    title: "Meet The Hub | Bump V1",
+    title: "Meet The Hub | Hype V1",
     year: "2022",
 
     src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fvlcsnap-2025-01-25-22h01m39s847.png?alt=media&token=6bdd1a01-b02d-4f91-8cc2-e2a1efb4c7c2",

@@ -13,38 +13,81 @@ interface CardProps {
 export function ThreeDCardDemo(props: CardProps) {
   return (
     <CardContainer className={twMerge("inter-var", props.className)}>
-      <div className="wrapper">
-        <div className="device h-[700px] w-[340px] max-md:h-[500px] max-md:w-[230px]">
-          <div className="ringer-switch"></div>
-          <div className="volume plus"></div>
-          <div className="volume minus"></div>
-          <div className="side-button"></div>
-          <div className="display">
-            <div className="speaker"></div>
-            <div className="camera"></div>
-            <div className="notch w-[180px] h-[30px] max-md:w-[100px] max-md:h-[20px]">
-              <span></span>
-              <span></span>
+      <div className=" ">
+        <div className="phone-con">
+          <div className="phone">
+            <div className="buttons">
+              <div className="left">
+                <div className="button"></div>
+                <div className="button"></div>
+                <div className="button"></div>
+              </div>
+              <div className="right">
+                <div className="button"></div>
+              </div>
             </div>
-            {/* <div className="icons-top">
-              <div className="cell">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div className="screen-container">
+              <div className="bg">
+                <div className="deep-purple">
+                  <div className="section">
+                    <div className="glow"></div>
+                  </div>
+                  <div className="section">
+                    <div className="glow"></div>
+                  </div>
+                </div>
+                <div className="gold">
+                  <div className="section">
+                    <div className="glow"></div>
+                  </div>
+                  <div className="section">
+                    <div className="glow"></div>
+                  </div>
+                </div>
+                <div className="space-black">
+                  <div className="section">
+                    <div className="glow"></div>
+                  </div>
+                  <div className="section">
+                    <div className="glow"></div>
+                  </div>
+                </div>
+                <div className="silver">
+                  <div className="section">
+                    <div className="glow"></div>
+                  </div>
+                  <div className="section">
+                    <div className="glow"></div>
+                  </div>
+                </div>
+                <div className="random canvas">
+                  <div className="shapes">
+                    <div className="shape"></div>
+                    <div className="shape"></div>
+                    <div className="shape"></div>
+                    <div className="shape"></div>
+                    <div className="shape"></div>
+                    <div className="shape"></div>
+                  </div>
+                </div>
               </div>
-              <div className="wifi">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div className="battery">
-                <span></span>
-              </div>
-            </div> */}
-            {/* Accepts children to display dynamic content */}
-            <div className="screen-content ">{props.children}</div>
-            <div className="home-bar"></div>
+              {/* <div className="notch-container ">
+                <div className="notch">
+                  <div className="content">
+                    <div className="left">
+                      <div className="tile"></div>
+                      <div className="text"></div>
+                    </div>
+                    <div className="right"></div>
+                    <div className="bar">
+                      <div className="duration"></div>
+                    </div>
+                  </div>
+                </div>
+              </div> */}
+              <div className="notch-blur"></div>
+              <div className="screen">{props.children}</div>
+            </div>
           </div>
         </div>
       </div>

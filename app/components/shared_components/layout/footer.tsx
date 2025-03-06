@@ -6,7 +6,7 @@ function Footer(props: { className?: string }) {
     <footer
       className={
         props.className +
-        " rtl:font-cairo font-roboto footer   flex flex-col z-20 text-center justify-center w-full "
+        " footer z-20 flex w-full flex-col justify-center bg-color text-center font-roboto rtl:font-cairo"
       }
     >
       <Banner />

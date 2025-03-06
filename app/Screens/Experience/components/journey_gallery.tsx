@@ -106,7 +106,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             decoding="sync"
           />
           {current === index && (
-            <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
+            <div className="absolute inset-0 bg-black/5 transition-all duration-1000" />
           )}
         </div>
       </li>{" "}
@@ -156,7 +156,7 @@ interface CarouselProps {
 }
 
 export function Carousel({ slides }: CarouselProps) {
-  const [current, setCurrent] = useState(7);
+  const [current, setCurrent] = useState(8);
 
   const handlePreviousClick = () => {
     const previous = current - 1;

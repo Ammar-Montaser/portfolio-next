@@ -14,44 +14,32 @@ export const InfiniteMovingPhones = ({
 }) => {
   const images = [
     {
-      id: 3,
-      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fthird.png?alt=media&token=73432de9-39bd-4493-9d92-cb5f490c48dc",
+      id: 1,
+      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2FclientAppScreenshots%2Fphone_r1-min.png?alt=media&token=7624410e-5406-4139-8902-65f8fa61cf4c",
     },
-    {
-      id: 4,
-      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Ffourth.png?alt=media&token=e8abc8a0-65b3-47b9-bec8-3d944c09ff55",
-    },
+
     {
       id: 2,
-      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fsecond.png?alt=media&token=b9b0ca37-30ef-4d37-8604-2abcb832ddd2",
+      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2FclientAppScreenshots%2Fphone_r2-min.png?alt=media&token=e98d3b26-26bb-45a3-8af5-ce38b6be8557",
     },
+
+    {
+      id: 3,
+      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2FclientAppScreenshots%2Fphone_r3-min.png?alt=media&token=09bacfc7-c48c-4368-916d-231c24935fda",
+    },
+
+    {
+      id: 4,
+      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2FclientAppScreenshots%2Fphone_r4-min.png?alt=media&token=1caa9a18-be9a-4639-a7c4-5097d63b157d",
+    },
+
     {
       id: 5,
-      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Ffifth.png?alt=media&token=ada3abe1-3060-449a-b15a-7aa1244b8aff",
-    },
-    {
-      id: 10,
-      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Ftenth.png?alt=media&token=7cb2ad2b-1fa8-4272-9250-e2df5901b9f6",
-    },
-    {
-      id: 1,
-      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Ffirst.png?alt=media&token=4c17c5e1-6394-4b18-a94f-66b26dd733f5",
+      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2FclientAppScreenshots%2Fphone_r5-min.png?alt=media&token=2e93483f-8ced-41b5-bbe2-83532fe76c77",
     },
     {
       id: 6,
-      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fsixth.png?alt=media&token=a51c9934-489a-465d-bda4-4a2760acbc73",
-    },
-    {
-      id: 7,
-      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fseventh.png?alt=media&token=0721dc70-d967-4ce1-8403-7e8198a7b78a",
-    },
-    // {
-    //   id: 8,
-    //   url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Feighth.png?alt=media&token=072f6c37-5e91-4aed-a1bd-128b5b7e390a",
-    // },
-    {
-      id: 9,
-      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fninth.png?alt=media&token=02d5e00a-8807-4d9c-a0b8-3beb5475d2fe",
+      url: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/HypeMaterial%2FclientAppScreenshots%2Fphone_r6-min.png?alt=media&token=51062a8b-46b0-4f16-aa1d-0046bda830cf",
     },
   ];
   const containerRef = React.useRef<HTMLDivElement>(null);
@@ -102,30 +90,24 @@ export const InfiniteMovingPhones = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 mx-auto mt-20 w-[150%] overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 mx-auto mt-4 w-[150%] overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className,
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex h-full w-max min-w-full shrink-0 flex-nowrap gap-4",
+          "flex w-max min-w-full shrink-0 flex-nowrap gap-4",
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]",
         )}
       >
         {images.map((item) => (
           <li
-            className="relative flex h-full w-[350px] max-w-full flex-shrink-0 flex-col items-center justify-center rounded-2xl px-8 py-6 md:w-[500px]"
+            className="relative flex w-[350px] max-w-full flex-shrink-0 flex-col items-center justify-center rounded-2xl px-8 md:w-[500px]"
             key={item.id}
           >
-            <Image
-              className="object-fill"
-              src={item.url}
-              alt=""
-              width={500}
-              height={300}
-            />
+            <Image src={item.url} alt="" width={500} height={300} />
           </li>
         ))}
       </ul>

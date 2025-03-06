@@ -11,7 +11,7 @@ function About() {
   const mode = useAppSelector((state) => state.appSlice.mode);
 
   return (
-    <div className="bg-white/70/40 relative flex flex-col justify-center dark:bg-[#121212]">
+    <div className="relative flex flex-col justify-center bg-neutral-100 dark:bg-[#121212]">
       <BentoGrid className="max-w-8xl px-3 md:px-10 lg:px-10 xl:px-12">
         <div className="row-span-1 flex flex-col justify-between rounded-3xl border-2 border-BG bg-gray-200 p-4 transition duration-1000 hover:shadow-xl hover:drop-shadow-glow dark:bg-neutral-900 dark:shadow-none">
           <h2 className="text-2xl font-bold text-black dark:text-white">
