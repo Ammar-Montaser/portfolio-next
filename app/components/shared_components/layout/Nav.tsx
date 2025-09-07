@@ -27,7 +27,7 @@ function Nav(props: { className?: string }): ReactNode {
         id="header"
         className={
           props.className +
-          " z-50 flex h-20 w-full flex-row items-center justify-between rounded-b-2xl p-8 shadow-lg backdrop-blur-sm duration-300"
+          " z-[100] flex h-20 w-full flex-row items-center justify-between rounded-b-2xl p-8 shadow-lg backdrop-blur-sm duration-300"
         }
       >
         <Logo />
@@ -42,8 +42,8 @@ function Nav(props: { className?: string }): ReactNode {
         <button
           className={
             open
-              ? "right-10 z-20 rounded-md shadow-lg duration-300"
-              : "right-10 z-20 rounded-md shadow-lg duration-300 hover:shadow-BG lg:hidden"
+              ? "right-10 z-[100] rounded-md shadow-lg duration-300"
+              : "right-10 rounded-md shadow-lg duration-300 hover:shadow-BG lg:hidden"
           }
           onClick={toogleMenu}
         >

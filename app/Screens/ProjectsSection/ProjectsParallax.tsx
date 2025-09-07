@@ -33,6 +33,26 @@ export const ProjectsParallax = () => {
       ref={ref}
       className="relative flex h-fit flex-col self-auto overflow-hidden bg-neutral-100 antialiased [perspective:1000px] [transform-style:preserve-3d] dark:bg-[#121212]"
     >
+      <div className="flex gap-4 px-4 max-md:flex-col">
+        {" "}
+        <iframe
+          src="https://www.youtube.com/embed/jZXYjEYBGGE?si=rgBbnifVd6XNucHk"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          className="h-[500px] w-full rounded-2xl"
+        ></iframe>
+        <iframe
+          src="https://www.youtube.com/embed/Wl40vQngN5I?si=mWx9pmmFlLynGqN_"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          className="h-[500px] w-full rounded-2xl"
+        ></iframe>
+      </div>
+
       <Header />
 
       <motion.div className="visible mx-5 mb-20 grid grid-cols-1 grid-rows-4 gap-10 md:hidden md:grid-cols-2 xl:mx-10 xl:grid-cols-3">
@@ -64,13 +84,13 @@ export const Header = () => {
   return (
     <div className="relative px-4 py-20 md:py-40">
       <h1 className="text-center text-xl font-bold dark:text-white md:text-6xl">
-        The Ultimate <br /> Development Portfolio
+        The Ultimate Portfolio
       </h1>
       <p className="mx-auto mt-8 max-w-2xl text-center text-base dark:text-neutral-200 md:text-lg">
         Throughout the past years I've had the chance to work on various
         projects of different scales and industries. Unfortunately, due to
         Non-Disclosure Agreements some projects can't be added to the portfolio.
-        However, here's a list of some amazing projects I developed.
+        However, here's a list of some of my cool projects.
       </p>
     </div>
   );
@@ -171,11 +191,6 @@ const products = [
     title: "The Hub Mobile App [My Startup] (Old Version)",
     link: "https://youtu.be/OXlKVFP5caI",
     thumbnail: "https://iili.io/JNjA1ja.webp",
-  },
-  {
-    title: "Portfolio Website (Old)",
-    link: "https://sprightly-sherbet-85510a.netlify.app",
-    thumbnail: "https://iili.io/JNjACv9.webp",
   },
 
   {

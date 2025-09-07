@@ -187,9 +187,9 @@ export default function Home() {
         className="z-10 text-[3rem] text-black dark:text-white sm:text-[4rem] md:text-[6rem] lg:text-[9rem] xl:text-[11rem]"
         text="PROJECTS"
         number={3}
-        item1="WEB & MOBILE"
-        item2="ARTIFICIAL INTELLIGENCE"
-        item3="FULL STACK"
+        item1="WAY MORE"
+        item2="THAN JUST"
+        item3="ANY DEV"
       />
       <ProjectsParallax />
       <DidYouKnow />

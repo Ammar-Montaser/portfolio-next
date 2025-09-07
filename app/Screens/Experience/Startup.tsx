@@ -40,7 +40,7 @@ function Startup() {
   const mode = useAppSelector((state) => state.appSlice.mode);
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollY, scrollYProgress } = useScroll({ target: targetRef });
-  const x = useTransform(scrollYProgress, [0, 1], ["-70%", "70%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["-80%", "80%"]);
 
   return (
     <div
@@ -48,6 +48,14 @@ function Startup() {
       ref={targetRef}
       className="relative snap-x snap-mandatory sm:h-[500vh]"
     >
+      {" "}
+      <div className="relative flex h-screen w-full flex-1 flex-col items-center justify-center overflow-hidden bg-[#121212]">
+        {" "}
+        <h2 className="xl:text-[9 rem] z-10 text-[4rem] text-[#e8ff18] sm:text-[7rem] md:text-[7rem] lg:text-[8rem]">
+          MY STORY
+        </h2>
+        <Carousel slides={slides} />
+      </div>
       <div className="sticky top-0 flex h-screen snap-x snap-mandatory items-start justify-center overflow-hidden bg-neutral-100 dark:bg-[#121212]">
         <div className="absolute z-10 flex h-full w-full items-center justify-evenly max-sm:flex-col">
           <div className="left-0 right-0 -z-50 flex flex-col items-center justify-between gap-4">
@@ -61,10 +69,6 @@ function Startup() {
               <h2 className="nunito text-center text-3xl font-light text-black dark:text-white max-sm:text-2xl">
                 {" "}
                 The Ultimate AI Powered Social Platform{" "}
-              </h2>
-              <h2 className="nunito text-center text-2xl font-medium text-black dark:text-white max-sm:text-xl">
-                {" "}
-                COMING SOON
               </h2>
               <a className="" href="https://www.hypeapp.me" target="_blank">
                 <button className="mt-8 bg-[#fcff30] px-4 py-2 hover:bg-[#b000ad]">
@@ -234,18 +238,6 @@ function Startup() {
               className="left-0 top-0 h-screen w-screen object-cover"
             />
           </div>{" "}
-          <div className="relative flex h-screen w-screen flex-1 flex-col items-center justify-center overflow-hidden bg-[#000000e0]">
-            {" "}
-            <motion.h2
-              initial={{ y: -200 }}
-              whileInView={{ y: 0 }}
-              transition={{ duration: 1 }}
-              className="xl:text-[9 rem] z-10 text-[4rem] text-[#e8ff18] sm:text-[7rem] md:text-[7rem] lg:text-[8rem]"
-            >
-              THE JOURNEY
-            </motion.h2>
-            <Carousel slides={slides} />
-          </div>
         </motion.div>
       </div>
     </div>
@@ -253,6 +245,16 @@ function Startup() {
 }
 
 const slides = [
+  {
+    title: "Hype Joins Antler's Residency in Riyadh",
+    year: "2025",
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fhypexantler-1.webp?alt=media&token=26faa013-31f2-4209-b0f9-ebec1968fea3",
+  },
+  {
+    title: "Hype @ AUC V-LAB Demo Day",
+    year: "2025",
+    src: "https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2F5ee3c003-9577-4503-bcf4-14d1d07c05d3.webp?alt=media&token=92fa23f0-f75e-46b5-af3b-97f39261e7d3",
+  },
   {
     title: "Hype Rebranding",
     year: "2025",

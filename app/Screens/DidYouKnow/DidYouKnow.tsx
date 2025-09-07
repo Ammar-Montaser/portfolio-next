@@ -3,13 +3,15 @@
 // import YearBook from "../../../assets/Yearbook.png";
 // import Metaverse from "../../../assets/metaverse.png";
 
+import Script from "next/script";
 import { AnimatedTestimonials } from "./components/CardStack";
 
 // import Military from "../../../assets/Military.jpeg";
 function DidYouKnow() {
   return (
-    <div className="relative flex flex-col overflow-hidden bg-neutral-100 dark:bg-[#121212] sm:h-[60vh]">
+    <div className="relative flex overflow-hidden bg-neutral-100 dark:bg-[#121212] max-lg:flex-col max-lg:px-4">
       <AnimatedTestimonials items={CARDS} />
+      <div className="mx-auto w-full max-w-[540px]"></div>
     </div>
   );
 }
