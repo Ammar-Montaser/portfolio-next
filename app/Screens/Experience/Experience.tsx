@@ -8,19 +8,20 @@ function Experience() {
   const { scrollYProgress } = useScroll({ target: targetRef });
   const x = useTransform(scrollYProgress, [0, 1], ["70%", "-70%"]);
   return (
-    <div ref={targetRef} className="relative h-[700vh]">
+    <div ref={targetRef} className="relative h-full">
       <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden bg-neutral-100 dark:bg-[#121212]">
         <div className="absolute flex h-3/4 w-screen flex-col items-center justify-evenly">
-          <p className="w-10/12 text-center text-6xl font-bold text-black dark:text-neutral-200">
+          <p className="w-10/12 text-center text-8xl font-bold text-black dark:text-neutral-200">
             My Next Milestone
           </p>
-          <p className="text-center text-3xl font-extralight text-black dark:text-white lg:text-4xl">
+          <p className="text-center text-3xl font-bold text-black dark:text-white lg:text-4xl">
             Forbes Thirty Under Thirty List
           </p>
           <CountdownTimer />
+
           <PreviousCompanies />
         </div>
-        <motion.div className="flex" style={{ x: x }}>
+        {/* <motion.div className="flex" style={{ x: x }}>
           <div className="flex h-screen w-screen flex-1 flex-col justify-center bg-[#008BFF] pt-20 sm:pt-0">
             <div className="flex flex-col lg:flex-row">
               <div className="flex h-fit flex-col items-start justify-center px-5 md:px-24 lg:w-6/12">
@@ -274,7 +275,7 @@ function Experience() {
               </p>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

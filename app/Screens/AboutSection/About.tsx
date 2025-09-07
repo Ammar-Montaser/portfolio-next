@@ -18,21 +18,21 @@ function About() {
             Summary
           </h2>
           <p className="text-md font-sans font-normal text-neutral-600 dark:text-neutral-300 md:text-xl">
-            Innovative Software Engineer, focused on creating{" "}
-            <span className="text-color">functional</span> and
-            <span className="text-color"> user-centered</span> digital products
-            that provide <span className="text-color">creative solutions</span>{" "}
-            to real life problems.
-          </p>
-
-          <div className="flex flex-row justify-between">
+            Innovative Software Engineer, founder of{" "}
             <a
-              href="https://drive.google.com/uc?export=download&id=11FDWtO8qGjH4CN8dwPPd76XKpz_5Mn7p"
-              className="roboto-bold w-50 rounded-2xl bg-BG px-4 py-2 text-black dark:bg-black dark:text-white"
+              href="https://www.hypeapp.me"
+              className="text-[#FFF700] transition-colors duration-300 hover:text-[#B000aD]"
             >
-              Download Resume
+              HYPE
             </a>
-          </div>
+            , focused on creating <span className="text-color">functional</span>{" "}
+            and
+            <span className="text-color"> user-centered</span> digital products
+            that provide
+            <span className="text-color"> creative solutions</span> to real life
+            problems.
+          </p>{" "}
+          <SocialMediaIcons className="z-20" size="size-8" />
         </div>
         <div className="row-span-2 rounded-3xl border-2 border-BG bg-gray-200 p-4 transition duration-1000 hover:shadow-xl hover:drop-shadow-glow dark:bg-neutral-900 dark:shadow-none">
           <Carousel
@@ -44,6 +44,13 @@ function About() {
               <FaChevronRight className="fa-solid fa-chevron-right text-3xl text-color" />
             }
           >
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fd1a6cc2cc193fc686527f47a723725e53e284a50-4969x7450.webp?alt=media&token=e643f62e-7b4c-4d56-a637-9ca550550b0d"
+              alt="A random pic of me"
+              className="h-full w-full object-cover"
+              width={900}
+              height={900}
+            />
             <Image
               src="https://i.postimg.cc/NMJFZpmd/IMG-7448.webp"
               alt="A random pic of me"
@@ -58,15 +65,16 @@ function About() {
               width={900}
               height={900}
             />
+
             <Image
-              src="https://i.postimg.cc/qRMgm9ht/IMG-3779.webp"
-              alt="A picture of me attending Startups Without Borders Summit"
+              src="https://iili.io/JOgkVOQ.webp"
+              alt="My Amazon Swag"
               className="h-full w-full object-cover"
               width={900}
               height={900}
             />
             <Image
-              src="https://iili.io/JOgkVOQ.webp"
+              src="https://firebasestorage.googleapis.com/v0/b/bump-pozhf5.firebasestorage.app/o/landingPage%2Fvlab%20photo%20laughing.webp?alt=media&token=5c941c75-7074-4e45-9267-e3ddaa6d48b1"
               alt="My Amazon Swag"
               className="h-full w-full object-cover"
               width={900}
@@ -97,10 +105,9 @@ function About() {
             lifelong fascination. Therefore, I pursued a Bachelor's degree in
             Computer Science. My goal is to create innovative technological
             solutions that transform people's lives for the better. Pioneers
-            like Elon Musk and Steve jobs{" "}
-            <span className="font-bold">inspire me</span> with their
-            world-changing innovations. I'm driven to develop products with a
-            similar positive impact. Through{" "}
+            like Steve jobs <span className="font-bold">inspire me</span> with
+            their world-changing innovations. I'm driven to develop products
+            with a similar positive impact. Through{" "}
             <span className="font-bold">continuous learning</span>, I strengthen
             my diverse skillset which ranges from software development to
             product strategy.{" "}
@@ -169,9 +176,6 @@ function About() {
               <h2 className="text-md font-bold text-black dark:text-white">
                 Saudi Arabian American International School
               </h2>
-              <h2 className="text-md font-bold text-black dark:text-white">
-                2017-2018
-              </h2>
             </div>
 
             <h3 className="text-sm font-bold dark:text-white">Taif, KSA</h3>
@@ -184,16 +188,13 @@ function About() {
               <h2 className="text-md font-bold text-black dark:text-white">
                 The British University In Egypt
               </h2>
-              <h2 className="text-md font-bold text-black dark:text-white">
-                2018-2022
-              </h2>
             </div>
             <h3 className="text-sm font-bold dark:text-white">Cairo, Egypt</h3>
             <h3 className="text-sm dark:text-white/70">
               Computer Science Bachelor's Degree
             </h3>{" "}
             <h3 className="text-sm font-bold dark:text-white/70">
-              First Class Honors - 3.8 GPA
+              First Class Honors
             </h3>
           </div>
         </div>

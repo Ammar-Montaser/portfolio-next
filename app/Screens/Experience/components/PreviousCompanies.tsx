@@ -2,7 +2,12 @@ import { InfiniteMovingCards } from "./ScrollingCards";
 
 function PreviousCompanies() {
   return (
-    <div className="h-[25vh] z-0 flex flex-col justify-center items-center ">
+    <div className="z-0 flex h-[25vh] flex-col items-center justify-center">
+      {" "}
+      <h3 className="text-3xl text-[#FFF700]">
+        {"  "}
+        PREVIOUS COMPANIES INCLUDE
+      </h3>
       <InfiniteMovingCards className="" pauseOnHover={false} speed="fast" />
     </div>
   );

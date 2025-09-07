@@ -8,7 +8,7 @@ import { AnimatedTestimonials } from "./components/CardStack";
 // import Military from "../../../assets/Military.jpeg";
 function DidYouKnow() {
   return (
-    <div className="relative flex flex-col bg-neutral-100 dark:bg-[#121212] sm:h-[60vh]">
+    <div className="relative flex flex-col overflow-hidden bg-neutral-100 dark:bg-[#121212] sm:h-[60vh]">
       <AnimatedTestimonials items={CARDS} />
     </div>
   );

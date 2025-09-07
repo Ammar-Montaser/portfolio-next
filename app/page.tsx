@@ -137,7 +137,7 @@ export default function Home() {
             ></path>
           </svg>
         }
-        id="projects"
+        id="startup"
         className="z-10 text-[3rem] text-black dark:text-white sm:text-[4rem] md:text-[6rem] lg:text-[9rem] xl:text-[11rem]"
         text="STARTUP"
         number={3}

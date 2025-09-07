@@ -27,17 +27,17 @@ function Nav(props: { className?: string }): ReactNode {
         id="header"
         className={
           props.className +
-          " z-50 flex h-20 w-full flex-row items-center justify-around rounded-b-2xl shadow-lg backdrop-blur-sm duration-300"
+          " z-50 flex h-20 w-full flex-row items-center justify-between rounded-b-2xl p-8 shadow-lg backdrop-blur-sm duration-300"
         }
       >
         <Logo />
         {!open && <Navbar />}
-        {!open && (
+        {/* {!open && (
           <ShimmerButton
             content={t("downloadResume")}
             ClassName="rtl:font-cairo font-roboto dark:text-white text-black w-50 px-4 py-2 max-xl:hidden "
           />
-        )}
+        )} */}
 
         <button
           className={

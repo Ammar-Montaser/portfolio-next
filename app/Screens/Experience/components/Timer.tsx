@@ -47,7 +47,7 @@ const CountdownTimer: React.FC = () => {
   }
 
   return (
-    <div className="flex animate-pulse flex-row text-center text-xl text-neutral-600 dark:text-neutral-200 md:text-7xl">
+    <div className="flex animate-pulse flex-row text-center text-xl font-light text-neutral-600 dark:text-neutral-200 md:text-7xl">
       <h2 className="">
         {timeLeft.years} Years, {timeLeft.months} Months, {timeLeft.days} Days
         Left{" "}
