@@ -156,11 +156,6 @@ const products = [
       "https://i.postimg.cc/G3gbR4NS/Screenshot-2024-06-13-at-8-23-33-PM.webp",
   },
   {
-    title: "Calorie Intake Calculator (FlutterFlow)",
-    link: "https://www.loom.com/share/dfa457e5c6bd4ca3aedb3d22ad3ed804?sid=006bd1b0-8f38-46c9-b733-4d003f96f5c6",
-    thumbnail: "https://iili.io/JNj5rk7.webp",
-  },
-  {
     title: "Business Card Website [UI/UX + Tailwind]",
     link: "https://ammar-business-card.netlify.app/",
     thumbnail:

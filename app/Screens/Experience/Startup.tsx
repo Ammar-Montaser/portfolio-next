@@ -52,7 +52,7 @@ function Startup() {
       <div className="relative flex h-screen w-full flex-1 flex-col items-center justify-center overflow-hidden bg-[#121212]">
         {" "}
         <h2 className="xl:text-[9 rem] z-10 text-[4rem] text-[#e8ff18] sm:text-[7rem] md:text-[7rem] lg:text-[8rem]">
-          MY STORY
+          The Journey
         </h2>
         <Carousel slides={slides} />
       </div>
